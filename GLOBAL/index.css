@@ -1,0 +1,355 @@
+:root {
+  --merah: #e3322d;
+  --abu: #3a3a3e;
+  --putih: #ffffff;
+  --bg-abu: #202024;
+}
+
+* {
+  text-decoration: none;
+}
+
+body {
+  font-family: inter, sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+/* ::selection {
+  background-color: #ff5f42; 
+  color: #ffffff; 
+} */
+
+.small-text {
+  font-size: 13px;
+}
+
+/* main punya */
+.container_main {
+  padding: 0 145px;
+}
+
+/* ================================================================================================
+======================================= NAVBAR SEARCH AWAL  ========================================*/
+.navbar_2 {
+  padding: 0;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  z-index: 9999;
+}
+
+.search-container {
+  width: 300px;
+  position: relative;
+}
+.search-input {
+  width: 80%;
+  height: 40px;
+  padding: 10px 1px 10px 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  background-color: #303030;
+  border: 1px solid #404044;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #757575;
+}
+.search-container .search-input:hover {
+  background-color: #404044;
+}
+/* =========================================================================================
+=======================================BAR SEARCH AKHIR  ====================================*/
+
+/* ========================================================================================
+======================================= CART AWAL  ========================================== */
+/* main cart  */
+.text-custom {
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgb(191, 222, 124),
+    rgb(255, 209, 92)
+  );
+  background-clip: text;
+}
+/* ==========================================================================================
+==================================== CART AKHIR ================================================ */
+
+/* ===========================================================================================
+==================================== HOME PAGE AWAL ========================================= */
+
+
+.carousel-item-content {
+  height: 500px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem;
+  color: #ffffff;
+}
+
+.carousel-item-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    to top,
+    rgba(18, 18, 18, 1) 5%,
+    rgba(18, 18, 18, 0.7) 25%,
+    rgba(18, 18, 18, 0) 60%
+  );
+}
+
+.carousel-caption-custom {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+  max-width: 50%;
+}
+
+.game-logo {
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* 1. Bikin animasi buat logo (muncul dari bawah sambil nongol) */
+@keyframes fadeInLogo {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+    /* Mulai dari bawah dikit */
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 2. Sembunyiin dulu logonya di slide yg ga aktif */
+.carousel-item .game-logo {
+  opacity: 0;
+}
+
+/* 3. Pas slidenya aktif, baru jalanin animasi logonya */
+.carousel-item.active .game-logo {
+  animation-name: fadeInLogo;
+  animation-duration: 0.8s;
+  /* Durasi animasi logonya */
+  animation-delay: 0.1s;
+  /* Nah ini dia, DELAY sebelum logo muncul */
+  animation-fill-mode: both;
+  /* Biar ga ilang setelah animasi & ga keliatan sebelum delay */
+}
+
+/* Styling buat navigasi di kanan */
+.nav-pills .nav-link {
+  background-color: transparent;
+  color: #a0a0a0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: background-color 0.2s ease-in-out;
+  border: 2px solid transparent;
+  font-size: 14px;
+  text-align: left;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: #2a2a2e;
+  color: #ffffff;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #2a2a2e;
+  color: #ffffff;
+  font-weight: bold;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+.nav-thumbnail {
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.btn-small {
+  font-size: 14px;
+  padding: 0.5rem 1.5rem;
+}
+/* game baru */
+   .game-card-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 16px; /* Samain sama radius gambar */
+        }
+
+        .game-card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.1); /* Siluet putih tipis */
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+
+        .add-library-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: #ffffff;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover .game-card-overlay,
+        a:hover .add-library-icon {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .list-game-item:hover {
+            background-color: #2a2a2e;
+        }
+        
+/* ===========================================================================================
+==================================== HOME PAGE AKHIR ========================================= */
+
+/*==========================================================================================
+==================================== PREVIEW AWAL =============================================*/
+.font-note {
+  font-size: 12px;
+}
+.text-putih-abu {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+.btn-merah {
+  background-color: var(--merah);
+  color: var(--putih);
+}
+.btn-merah:hover {
+  background-color: rgb(234, 101, 97);
+}
+.btn-abu {
+  background-color: var(--abu);
+  color: var(--putih);
+}
+.btn-abu:hover {
+  background-color: rgb(101, 101, 107);
+}
+/* peringatan preview */
+.warning {
+  background-color: #232326;
+  color: #bdbdbd;
+  border-left: 6px solid #e3322d;
+  font-size: 15px;
+}
+/* deskripsi - edisi  */
+.card-edisi img {
+  width: 40%;
+}
+
+.bg-abu {
+  background-color: var(--bg-abu);
+}
+/* ukuran rating */
+.rating-circle {
+  margin-top: -85px;
+  width: 120px;
+  text-align: center;
+}
+
+/* carousel reting */
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 6px;
+  margin-left: 6px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+  border-radius: 50%;
+}
+
+/* Style untuk indikator yang aktif */
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+/* Memastikan indikator benar-benar di tengah */
+.carousel-indicators {
+  margin-right: 0;
+  margin-left: 0;
+}
+/*======================================================================================
+========================= ============ PREVIEW AKHIR ===================================== */
+
+/* ========================================================================================
+======================================= FOOTHER =========================================== */
+.foother {
+  font-size: 18px;
+}
+.foother p {
+  color: grey;
+  margin: 0;
+}
+.foother p:not(.fw-bold) {
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.foother p:not(.fw-bold):hover {
+  color: #ffffff;
+}
+
+.foother small {
+  font-size: 13px;
+}
+
+.foother {
+  background-color: #18181c;
+  color: white;
+}
+/* =============================================================================================
+===================================== FOOTHER AKHIR =========================================== */

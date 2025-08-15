@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjangan | belanjaan</title>
+  <!-- icon atas -->
+  <link rel="icon" href="/img/pngegg.png">
+  <!-- boostrap dan style -->
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/GLOBAL/index.css">
+  <!-- icon -->
+  <link rel="stylesheet" href="/fontawesome-free-6.7.2-web/css/all.css">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg py-2">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="/img/store.epicgames.com_en-US.png" alt="Epic Games" width="36" height="36" class="me-2" />
+        <span class="fw-bold"></span>
+        <i class="fa-solid fa-chevron-down fa-2xs"></i>
+      </a>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item ms-3">
+            <img src="/img/Logo Epic Games Store.svg">
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="#">Support</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white" href="#">
+              Distribute
+              <i class="fa-solid fa-chevron-down fa-2xs"></i> </a>
+          </li>
+        </ul>
+
+        <!-- kanan -->
+        <div class="d-flex align-items-center">
+          <a href="#" class="text-white me-3"><i class="fa-solid fa-globe" style="color: #ffffff"></i></a>
+          <img src="/img/user.jpg" alt="User Avatar" width="36" height="36" class="rounded-circle me-3" />
+          <span class="text-white me-3">yusha plok</span>
+          <a href="#" class="btn btn-primary">Download</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- konten -->
+  <main>
+    <!-- navbar2 -->
+    <header class="navbar_2">
+
+      
+      <div class="container d-flex justify-content-between">
+        <div class="navbar">
+          <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" class="search-input" placeholder="Search store">
+          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white fw-normal " href="#">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">Browse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">News</a>
+            </li>
+        </div>
+        <ul class="nav py-4 justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Wishlist</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link text-white position-relative" href="/GLOBAL/cart.html">
+              Cart <span class="rounded-pill badge bg-info ms-2 px-3 py-1">3</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="container m-auto">
+
+      <div class="d-flex justify-content-between align-items-center py-4  mb-5">
+        <h1 class="fw-boldd mb-0 fs-1">My Cart</h1>
+        <div class="d-flex align-items-center gap-3">
+          <a href="#" class="text-white text-decoration-none d-flex align-items-center">
+            Epic Rewards
+            <i class="fa-solid fa-arrow-up-right-from-square ms-2" style="font-size: 1rem;"></i>
+          </a>
+          <span class="fw-bold border rounded-pill px-3 py-1 ms-1">
+            IDR 0.00
+          </span>
+        </div>
+      </div>
+
+
+      <!-- barang -->
+      <div class="row mb-4">
+        <!-- Cart 1 -->
+        <div class="col-sm-8 pe-2">
+          <div class="bg-dark rounded-4 p-4 shadow-sm position-relative row">
+            <div class="col-2 p-0">
+              <img src="/img/gta.avif" alt="gta" width="100%" height="175" class="rounded-3" style="object-fit: cover;">
+              <i class="fa-brands fa-windows m-1 text-secondary"></i>
+            </div>
+
+            <div class="col-auto flex-grow-1 d-flex justify-content-between flex-column ps-3">
+              <div class="d-flex align-items-center mb-1 justify-content-between">
+                <div>
+                  <span class="badge bg-secondary me-2">Base Game</span>
+                </div>
+                <span class="fw-bold text-white ms-auto">IDR 439,000</span>
+              </div>
+              <h5 class="fw-bold mb-1">Grand Theft Auto V Enhanced</h5>
+              <div class="d-flex align-items-center mb-1">
+                <img src="/img/cristal.png" alt="cristal" width="18" class="me-2">
+                <span class="text-custom small">Earn a boosted 20% back in Epic Rewards, offer ends Aug 31.</span>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <span class="mb-1 ms-1">Refundable <i class="fa-regular fa-circle-question ms-1"
+                    title="Self-Refundable"></i></span>
+              </div>
+              <div class="d-flex gap-5 justify-content-end">
+                <h6 class="bg-dark text-secondary fw-bold link-light">Remove</h6>
+                <h6 class="bg-dark text-secondary fw-bold link-light">Move to wishlist</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="col-sm-4">
+          <div class="px-4 sticky-top">
+            <h5 class="fw-bold fs-3 mb-3">Games and Apps Summary</h5>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Price</span>
+              <span>IDR 1.967,999,00</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span>Taxes</span>
+              <span class="text-secondary">Calculated at Checkout</span>
+            </div>
+            <hr class="my-3 border-secondary">
+            <div class="d-flex justify-content-between mb-3">
+              <span class="fw-bold">Subtotal</span>
+              <span class="fw-bold">IDR 1.967,999,00</span>
+            </div>
+            <button class="btn btn-info w-100 py-2 ">Check Out</button>
+          </div>
+        </div>
+        <!-- cart 2 -->
+        <div class="col-sm-8 pe-2 mb-3">
+          <div class="bg-dark rounded-4 p-4 shadow-sm position-relative row">
+            <div class="col-2 p-0">
+              <img src="/img/rdr.avif" alt="rdr" width="100%" height="175" class="rounded-3" style="object-fit: cover;">
+              <i class="fa-brands fa-windows m-1 text-secondary"></i>
+            </div>
+
+            <div class="col-auto flex-grow-1 d-flex justify-content-between flex-column ps-3">
+              <div class="d-flex align-items-center mb-1 justify-content-between">
+                <div>
+                  <span class="badge bg-secondary me-2">Base Game</span>
+                </div>
+                <span class="fw-bold text-white ms-auto">IDR 439,000</span>
+              </div>
+              <h5 class="fw-bold mb-1">Read Dead Redemption 2</h5>
+              <div class="d-flex align-items-center mb-1">
+                <img src="/img/cristal.png" alt="cristal" width="18" class="me-2">
+                <span class="text-custom small">Earn a boosted 20% back in Epic Rewards, offer ends Aug 31.</span>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <span class="mb-1 ms-1">Self-Refundable <i class="fa-regular fa-circle-question ms-1"
+                    title="Self-Refundable"></i></span>
+              </div>
+              <div class="d-flex gap-5 justify-content-end">
+                <h6 class="bg-dark text-secondary fw-bold link-light">Remove</h6>
+                <h6 class="bg-dark text-secondary fw-bold link-light">Move to wishlist</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- cart 3 -->
+        <div class="col-sm-8 pe-2 mb-6">
+          <div class="bg-dark rounded-4 p-4 shadow-sm position-relative row">
+            <div class="col-2 p-0">
+              <img src="/img/fotball manager.avif" alt="Football" width="100%" height="175" class="rounded-3"
+                style="object-fit: cover;">
+              <i class="fa-brands fa-windows m-1 text-secondary"></i>
+            </div>
+
+            <div class="col-auto flex-grow-1 d-flex justify-content-between flex-column ps-3">
+              <div class="d-flex align-items-center mb-1 justify-content-between">
+                <div>
+                  <span class="badge bg-secondary me-2">Base Game</span>
+                </div>
+                <span class="fw-bold text-white ms-auto">IDR 439,000</span>
+              </div>
+              <h5 class="fw-bold mb-1">Football Manager</h5>
+              <div class="d-flex align-items-center mb-1">
+                <img src="/img/cristal.png" alt="cristal" width="18" class="me-2">
+                <span class="text-custom small">Earn a boosted 20% back in Epic Rewards, offer ends Aug 31.</span>
+              </div>
+              <div class="d-flex align-items-center mb-1">
+                <span class="mb-1 ms-1">Self-Refundable <i class="fa-regular fa-circle-question ms-1"
+                    title="Self-Refundable"></i></span>
+              </div>
+              <div class="d-flex gap-5 justify-content-end">
+                <h6 class="bg-dark text-secondary fw-bold link-light">Remove</h6>
+                <h6 class="bg-dark text-secondary fw-bold link-light">Move to wishlist</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <hr class="w-20 my-1 border-4 border-secondary mx-1" style="margin-top: -100;" />
+      <small class="small-text">* The lowest price offered on The Epic Games Store in the last 30 days
+        before
+        discount</small>
+    </div>
+    </div>
+  </main>
+  <!-- foother -->
+  <section class="foother px-5 py-3 mt-5  d-flex flex-column">
+    <div class="px-4 py-2 pt- fs-3 fw-bold d-flex">
+      <img src="/img/Logo Epic Games Store.svg" />
+      <div class="justify-content-end ms-auto d-flex gap-3 text-secondary">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+    <hr class="w-20 my-1 border-4 border-secondary mx-3" style="margin-top: -100;" />
+    </div>
+
+    <!-- berita - berita  -->
+    <div class="d-flex  text-white py-4 px-4 justify-content-between flex-column foother">
+      <!-- Baris Pertama -->
+      <div class="d-flex flex-wrap mb-6  gap-6">
+        <div class="d-flex flex-column gap-2 me-4">
+          <h5 class="fw-bold">Games</h5>
+          <p>Fortnite</p>
+          <p>Fall Guys</p>
+          <p>Rocket League</p>
+          <p>Unreal Tournament</p>
+          <p>Infinity Blade</p>
+          <p>Shadow Complex</p>
+          <p>Robo Recall</p>
+        </div>
+        <div class="d-flex flex-column gap-2 me-4">
+          <h5 class="fw-bold">Marketplaces</h5>
+          <p>Fab</p>
+          <p>Sketchfab</p>
+          <p>ArtStation</p>
+          <p>Store Refund Policy</p>
+          <p>Store EULA</p>
+        </div>
+        <div class="d-flex flex-column gap-2 me-4">
+          <h5 class="fw-bold">Tools</h5>
+          <p>Unreal Engine</p>
+          <p>UEFN</p>
+          <p>MetaHuman</p>
+          <p>Twinmotion</p>
+          <p>Megascans</p>
+          <p>RealityScan</p>
+          <p>Rad Game Tools</p>
+        </div>
+      </div>
+
+      <!-- Baris Kedua -->
+      <div class="d-flex gap-6 flex-wrap mb-5">
+        <div class="d-flex flex-column gap-2 ">
+          <h5 class="fw-bold">Online Services</h5>
+          <p>Epic Online Services</p>
+          <p>Kids Web Services</p>
+          <p>Services Agreement</p>
+          <p>Acceptable Use Policy</p>
+          <p>Trust Statement</p>
+          <p>Subprocessor List</p>
+        </div>
+        <div class="d-flex flex-column gap-2 me-6 ">
+          <h5 class="fw-bold">Company</h5>
+          <p>About</p>
+          <p>Newsroom</p>
+          <p>Careers</p>
+          <p>Students</p>
+          <p>UX Research</p>
+        </div>
+        <div class="d-flex flex-column gap-2 me-4">
+          <h5 class="fw-bold">Resources</h5>
+          <p>Dev Community</p>
+          <p>MegaGrants</p>
+          <p>Support-A-Creator</p>
+          <p>Creator Agreement</p>
+          <p>Distribute on Epic Games</p>
+          <p>Unreal Engine Branding Guidelines</p>
+          <p>Fan Art Policy</p>
+          <p>Community Rules</p>
+          <p>EU Digital Services Act Inquiries</p>
+          <p>Epic Pro Support</p>
+        </div>
+      </div>
+    </div>
+    <hr class="w-20 my-1 border-4 border-secondary mx-3" style="margin-top: -100;" />
+
+    <!-- copyright -->
+    <div class="d-flex ">
+      <div>
+        <small class="d-flex flex-column flex-wrap px-3 w-75 text-secondary my-3">© 2025, Epic Games, Inc. All rights
+          reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the
+          Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks
+          of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names are the
+          trademarks of their respective owners. Our websites may contain links to other sites and resources provided by
+          third parties. These links are provided for your convenience only. Epic Games has no control over the contents
+          of those sites or resources, and accepts no responsibility for them or for any loss or damage that may arise
+          from your use of them.</small>
+      </div>
+      <div class="d-flex w-70 align-items-center justify-content-center">
+        <a href="#" class="text-decoration-none text-white">
+          <h6 class="py-3 px-3 rounded-3 " style="background-color: #3a3a3e;"> back to top<svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M11 16h2v-4.2l1.6 1.6L16 12l-4-4l-4 4l1.4 1.4l1.6-1.6zm1 6q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20m0-8" />
+            </svg></h6>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap gap-4 px-3 pb-3 text-secondary  small">
+      <a href="#" class="text-secondary text-decoration-none me-3 link-light">Terms of service</a>
+      <a href="#" class="text-secondary text-decoration-none me-3 link-light">Privacy policy</a>
+      <a href="#" class="text-secondary text-decoration-none me-3 link-light">Safety & security</a>
+      <a href="#" class="text-secondary text-decoration-none me-3 link-light">Store refund policy</a>
+      <a href="#" class="text-secondary text-decoration-none link-light">Publisher Index</a>
+    </div>
+  </section>
+</body>
+
+</html>
